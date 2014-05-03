@@ -24,9 +24,38 @@ sudo reboot
 if you need to manually poweroff:
 sudo poweroff
 
+go ahead and install vim so that you have a text editor
+sudo apt-get install vim
+
+
 Part 2 - Enabling Wifi
 ######################
+You can find instructions for this several places on the internet.  Lets use this one: http://www.frodebang.com/p/1
 
+All you have to do is plug in your WiFi adapter and make some changes to /etc/network/interfaces
+sudo vi /etc/network/interfaces
+My interfaces file looks like this. I commented out three lines and added the third lines at the bottom.
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+#iface wlan0 inet manual
+#wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+#iface default inet dhcp
+
+iface wlan0 inet dhcp
+wpa-ssid <YOUR SSID>
+wpa-psk <YOUR PASSPHRASE/KEY>
+
+Save the file and reboot.
+sudo shutdown -r now
+
+Hopefully you now have a working wireless connection.
+
+Part 3 - Doing Stuff
+####################
 
 
 
