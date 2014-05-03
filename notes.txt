@@ -1,0 +1,35 @@
+Part 1 - Initial Configuration
+##############################
+
+Get the latest version of Raspbian Wheezy:
+http://www.raspberrypi.org/downloads/
+
+Image your SD card:
+http://sourceforge.net/projects/win32diskimager/
+
+On boot up be sure to:
+1. Expand the file system to use all available space on your SD card.
+2. Enable SSH access
+3. under Internationalization options, set the keyboard layout to English (US)
+4. OPTIONAL: set the hostname
+5. reboot
+
+
+if your Rpi doesn't boot to the raspi-config menu you can launch it with:
+sudo raspi-config
+
+if you need to manually reboot:
+sudo reboot
+
+if you need to manually poweroff:
+sudo poweroff
+
+Part 2 - Enabling Wifi
+######################
+
+
+
+
+
+
+
