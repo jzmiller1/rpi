@@ -56,6 +56,12 @@ Hopefully you now have a working wireless connection.
 
 Part 3 - Doing Stuff
 ####################
+Enable I2C protocol
+
+http://www.instructables.com/id/Raspberry-Pi-I2C-Python/step5/Example-1-CMPS03-Compass-Module/
+
+
+https://learn.adafruit.com/adafruit-10-dof-imu-breakout-lsm303-l3gd20-bmp180/connecting-it-up
 
 
 
